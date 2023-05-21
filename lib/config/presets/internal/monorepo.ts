@@ -207,6 +207,7 @@ const repoGroups = {
   redwood: 'https://github.com/redwoodjs/redwood',
   'reg-suit': 'https://github.com/reg-viz/reg-suit',
   remark: 'https://github.com/remarkjs/remark',
+  'remark-lint': 'https://github.com/remarkjs/remark-lint',
   remix: 'https://github.com/remix-run/remix',
   rjsf: 'https://github.com/rjsf-team/react-jsonschema-form',
   router5: 'https://github.com/router5/router5',
