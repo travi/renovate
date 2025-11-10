@@ -9,6 +9,11 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
+        with:
+          egress-policy: audit
+
       - uses: actions/stale@cdf15f641adb27a71842045a94023bef6945e3aa # renovate: tag=v4.0.0
         with:
           # Rate limit per run, (defaults to 30, but we've increased it to 40 for now).
